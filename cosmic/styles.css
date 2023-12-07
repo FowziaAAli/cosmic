@@ -1,0 +1,505 @@
+
+ 
+ header{
+
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+ }
+
+ body{
+    font-family: 'Pixelify Sans', cursive;
+    display: flex;
+    background-color: #020116;
+    background-image:  url("Assets/images/layer2purplestar.gif"), url("Assets/images/shootingstars50slowerexport.gif"), url("Assets/images/NebulaTransparent.png"), url("Assets/images/layer 3 green star.gif"), url("Assets/images/shootingstars.gif"),  url("Assets/images/yellowstars.gif"), url("https://i.imgur.com/SHZe50s.gif");
+    background-repeat:  repeat,no-repeat,no-repeat,repeat,no-repeat, repeat,repeat;
+    background-position: center center, center center,center center, center center,center center;
+    background-size:  auto,auto, 55%;
+    background-attachment: fixed,scroll, scroll,fixed,scroll,fixed,fixed,fixed;
+    overflow-y: hidden;
+    grid-auto-flow: column;
+    grid-column-gap: 800px;
+    
+ }
+
+
+
+ section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width: 100%;
+    color: white;
+    flex: none;
+    
+     }
+ 
+     /*toolbar*/
+     #toolbar{
+        background: #c0c0c0;
+        height: 35px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border-top: 2px solid #fff;
+        
+        .toolbar-start-menu{
+          float: left;
+          
+          .start-button{
+            background: url(https://win98icons.alexmeub.com/icons/png/windows-0.png) no-repeat 2px center / 24px;
+            padding-left: 28px;
+            padding-right: 5px;
+            height: 29px;
+            margin: 2px 3px;
+            font-weight: bold;
+            border: 2px solid #7c7c7c;
+            border-top-color: #fff;
+            border-left-color: #fff;
+            
+            &:hover{
+              background-color: darken(#c0c0c0, 10%);
+            }
+          }
+          
+         
+        }
+        
+        .toolbar-separator{
+          width: 2px;
+          height: 26px;
+          margin-top: 2px;
+          background: #797979;
+          float: left;
+          border-right: 1px solid #fff;
+        }
+        .toolbar-left{
+          float: left;
+          padding: 0 5px;
+        }
+        .toolbar-icon{
+          background: no-repeat center / auto 20px;
+          width: 25px;
+          height: 25px;
+          border: none;
+          margin-top: 3px;
+          margin: 3px 2px;
+          
+          &.ie{
+            background-image: url(https://win98icons.alexmeub.com/icons/png/gps-1.png);
+          }    
+          &.outlook{
+            background-image: url(https://win98icons.alexmeub.com/icons/png/internet_connection_wiz-1.png);
+          } 
+          &.desktop{
+      background-image: url(https://win98icons.alexmeub.com/icons/png/channels-5.png);
+          }
+          &.channels{
+            background-image: url(https://win98icons.alexmeub.com/icons/png/netmeeting-3.png);
+          }
+          &.clock{
+            background-image: url("Assets/icons/timewindows.gif");
+            background-size: 50px;  
+          }
+        }
+        .toolbar-right{
+          float: right;
+          margin: 2px 3px;
+          height: 29px;
+          border: 2px solid #7c7c7c;
+          border-bottom-color: #fff;
+          border-right-color: #fff;
+        }   
+          .time{
+            padding: 6px 40px;
+        
+          }
+        }
+      
+ 
+ 
+.window {
+  width: 400px;
+  height: 600px;
+    margin-left: auto;
+    transition: all 0.3s ease;
+}
+
+
+.minimized {
+    height: 30px;
+    overflow: hidden;
+}
+
+.title-bar {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    color: #fff;
+}
+
+.title-bar-controls button {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 8px;
+    padding: 5px;
+}
+
+.window-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* window text */
+.window-body h1 {
+    color: #fff;
+    align-items: center;
+}
+
+ /* Pages */
+       
+#desktop{
+    
+    width: 100%;
+    height: 200vh;
+    overflow: hidden;
+    
+  }
+  .desktop-icon{
+    
+    width: 115px;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    background: no-repeat center top;
+    padding-top: 70px;
+    margin: 10px;
+   
+
+    &.cosmic{
+      background-image: url(https://win98icons.alexmeub.com/icons/png/shut_down_with_computer-0.png);
+      background-size: 60px;  
+      cursor: pointer;
+      
+    }
+    &.connect{
+      background-image: url(https://win98icons.alexmeub.com/icons/png/network_internet_pcs_installer-2.png);
+      background-size: 60px;
+      cursor: pointer;
+    }
+    &.comment{
+      background-image: url(https://win98icons.alexmeub.com/icons/png/mailbox_world-2.png);
+      background-size: 60px;
+      cursor: pointer;
+    }
+    &.resume{
+      background-image: url(https://win98icons.alexmeub.com/icons/png/joystick-4.png);
+      background-size: 60px;
+      cursor: pointer;
+    }
+}
+        
+.embossed-panel {
+          padding: 10px;
+          background-color: #f0f0f0; 
+          border: 3px inset #d3d3d3; 
+          text-align: left; 
+          font-size: medium;
+          color:black;
+          margin: auto; 
+          width: 90%; 
+          margin-top: 60%;
+          overflow-y: scroll; 
+          height: 290px;
+      }
+       .overlay {
+        z-index: 9;
+        margin: 30px;
+
+      }
+      .modal-overlay {
+        position: fixed;
+ top: 50%;
+ left:50%;
+ transform: translate(-50%, -50%);
+       z-index: 1000; 
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal {
+      display: none;
+    }
+
+
+ 
+    .window-body {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .field-row-stacked {
+        width: 50%;
+    }
+
+        
+ /* Main */
+ section:nth-child(1){
+ 
+  .window{
+  
+height: 450px;
+width: 450px;
+
+margin: 0;
+   position: absolute;             
+   top: 50%;                        
+   transform: translate(0, -50%);
+
+
+    
+  }
+
+
+      
+
+     
+
+ }
+ 
+
+ /* Sun */
+ section:nth-child(2){
+   
+    
+    background-image:  url("Assets/images/sunblender800.gif") ;
+   
+
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    background-size:  105% ;
+ 
+  
+    .window {
+   
+        margin-left: 110%;
+        background-image: url("Assets/images/suninfo.png");
+        background-position: center 50px;
+        background-size: 200px;
+        background-repeat: no-repeat;
+    }
+   
+}
+ /* Mercury */
+ section:nth-child(3){
+    background-image:  url("Assets/images/layer2purplestar.gif"), url("Assets/images/mercurytwo.gif") ;
+   
+ 
+    background-repeat: no-repeat;
+    background-position:  0% center;
+    background-size: 40% ,40%;
+    .window {
+        margin-left: 35%;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mercury_in_true_color.jpg/440px-Mercury_in_true_color.jpg");
+        background-position: center 50px;
+        background-size: 200px;
+        background-repeat: no-repeat;
+        
+        
+        
+    }
+    
+     }
+
+     
+
+ /* Venus */
+ section:nth-child(4){
+    background-image: url("Assets/images/layer 3 green star.gif"), url("Assets/images/venus800ms.gif") ;
+   
+   
+    background-repeat: no-repeat;
+    background-position:  0% center;
+    background-size:  35%;
+   
+    .window {
+        margin-left: 40%;
+        background-image: url("Assets/images/venusinfo.jpeg");
+        background-position: center 50px;
+        background-size: 200px;
+        background-repeat: no-repeat;
+    }
+     }
+     
+
+ /* Earth */
+ section:nth-child(5){
+
+    background-image:  url("Assets/images/earthfinalrender.gif") ;
+
+    background-repeat: no-repeat;
+    background-position:  0% center;
+    background-size:  35%;
+ 
+    .window {
+        margin-left: 40%;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/440px-The_Blue_Marble_%28remastered%29.jpg");
+        background-position: center 50px;
+        background-size: 200px;
+        background-repeat: no-repeat;
+    }
+   
+     }
+    
+
+ /* Mars */
+ section:nth-child(6){
+   
+    background-image:  url("Assets/images/layer 3 green star.gif"), url("Assets/images/mars800ms.gif");
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    background-size:  35%;
+    .window {
+        margin-left: 35%;
+   
+        background-image: url("Assets/images/marspic.png");
+        background-position: center 50px;
+        background-size: 200px ;
+        background-repeat: no-repeat;
+       
+    } 
+     }
+
+ /* Asteroid Belt */
+ section:nth-child(7){
+ background-image:  url("Assets/images/shootingstars50.gif"), url("Assets/images/shootingstars.gif"),  url("Assets/images/yellowstars-exporslowert.gif"),url("Assets/images/shootingstars50slowerexport.gif"),url("Assets/images/asteroidbelt.gif");
+ background-position: top center left, top center, center, center,center;
+ background-repeat: no-repeat, no-repeat, repeat, no-repeat, no-repeat; 
+ align-items: flex-start;
+ background-size: auto,auto,auto,auto,contain;
+ .window {
+    margin-left: 45%;
+    margin-top:15%;
+    height: 200px;
+    background-image: none;
+}
+}
+
+ /* Jupiter */
+ section:nth-child(8){
+    background-image: url("Assets/images/yellowstars-exporslowert.gif"), url("Assets/images/jupiter1.gif") ;
+   
+ 
+    background-repeat: no-repeat;
+    background-position:  0% center;
+    background-size: 70%;
+    .window {
+        margin-left: 75%;
+        background-image: url("Assets/images/jupiterinfo.png");
+        background-position: center 50px;
+        background-size: 200px;
+        background-repeat: no-repeat;
+    } 
+
+    
+     }
+
+ /* Saturn */
+    section:nth-child(9){
+      background-image:  url("Assets/images/layer 3 green star.gif"), url("Assets/images/SATURNFINAL.gif") ;
+   
+ 
+      background-repeat: no-repeat;
+      background-position:0% center;
+      background-size: auto, 95%;
+     
+     .window {
+        margin-left: 65%;
+
+        background-image: url("Assets/images/saturninfo.png");
+        background-position: center 50px;
+        background-size: 200px;
+        background-repeat: no-repeat;
+    } }
+     
+ /* Uranus */
+ 
+
+ section:nth-child(10){
+    background-image: url("Assets/images/layer 3 green star.gif"), url("Assets/images/uranusfinalrender.gif");
+    background-attachment: scroll, scroll;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    background-size: 70%;
+
+    .window {
+        margin-left: 70%;
+
+    background-image: url("    https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Uranus_as_seen_by_NASA%27s_Voyager_2_%28remastered%29_-_JPEG_converted.jpg/440px-Uranus_as_seen_by_NASA%27s_Voyager_2_%28remastered%29_-_JPEG_converted.jpg");
+    background-position: center 50px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    } 
+
+
+     }
+
+ /* Neptune */
+ section:nth-child(11){
+
+        background-image: url("Assets/images/layer2purplestar.gif"), url("Assets/images/neptune.gif");
+
+        background-repeat: no-repeat;
+        background-position: 0% center;
+        background-size: auto, 60%;
+        .window {
+            margin-left: 60%;
+
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg/440px-Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg");
+        background-position: center 50px;
+        background-size: 200px;
+        background-repeat: no-repeat;
+        } 
+        
+    }
+         
+ /* Pluto */
+section:nth-child(12){
+  background-image:  url("Assets/images/layer2purplestar.gif"), url("Assets/images/plutofinal.gif") ;
+   
+ 
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    background-size: 40% ,15%;
+    margin-left: 10%;
+   
+    .window {
+        margin-left: 10%;
+
+    background-image: url("Assets/images/pluto.png");
+    background-position: center 50px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    } 
+
+          }
+
+
+ /* End */
+ section:nth-child(13){
+            align-items: center;
+             }

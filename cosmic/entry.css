@@ -1,0 +1,47 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    
+}
+
+.entry-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    height: 100%;
+    background-image: url("enterpage mockupglitch3-export.gif"), url("layer2purplestar.gif"), url("/Users/ubahhassan/Desktop/Space WEB/shootingstars50slowerexport.gif"), url("final nebula.png"), url("layer 3 green star.gif"), url("shootingstars.gif"),  url("yellowstars.gif"), url("https://i.imgur.com/SHZe50s.gif");
+    background-repeat:no-repeat, repeat,repeat,no-repeat,repeat,repeat,repeat, repeat;
+    background-position: center center;
+    background-size:100%, auto,auto,50%;
+    background-attachment:  scroll,fixed;
+  
+}
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #bdbdbd;
+    box-shadow: 0.5px 0.5px 0 0.5px black, inset 1px 1px #C2C6CA, inset -1px -1px #85898d, inset 2px 2px white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px; 
+}
+
+button:hover {
+    background-color: #a0a0a0;
+}
+.next-page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #f0f0f0;
+    opacity: 0; 
+    transition: opacity 0.5s; 
+}

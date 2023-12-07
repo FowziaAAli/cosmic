@@ -1,0 +1,730 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <style> 
+    
+</style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>COSMIC VOYAGE</title>
+<meta name="Cosmic Voyage" content="take a voyage through our universe ">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/98.css">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="https://win98icons.alexmeub.com/icons/png/world_star-1.png">
+
+
+</head>
+
+
+<body>
+ 
+    <section>   
+        
+        <div id="desktop">
+  
+            <div class="desktop-icon">
+                <div class="desktop-icon cosmic" title="Cosmic" onclick="openModal('myModal1')">
+                    Cosmic Voyage
+                </div>
+                
+                <div class="desktop-icon connect" title="Connect" onclick="openModal('myModal2')"> 
+                    Connect
+                </div>     
+               <div class="desktop-icon comment" title="Comments" onclick="openModal('myModal3')"> 
+                  Comments   </div>    
+              <div class="desktop-icon resume" title="Resume" onclick="openModal('myModal4')">   
+                Simulator
+              </div>
+            </div>
+            
+        </div>
+<!-- Modal Overlay and Window -->
+<div id="myModal1" class="modal-overlay"  style="display: none; z-index: 1;">
+    <div class="window">
+        <div class="title-bar" style="align-items: inherit;">
+          <div class="title-bar-text">COSMIC VOYAGE</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" onclick="closeModal('myModal1')"></button>
+          </div>
+        </div>
+        <div class="window-body" >
+            <img src="Assets/images/spaceicon.png" alt="Modal 1 Image" style="width: 250px; height: 150px; margin-left:20%;">
+            <p style="text-align:center; font-size: x-large; font-weight: bold; margin-left: 50px">Welcome, cosmic voyager!</p> 
+            <p style="font-size: medium; font-weight:bold ;">Embark on an exciting journey through our Milky Way Galaxy explore the wonders of each planet!
+               <br> <br>To guide your journey, scroll sideways and click on the info-boxes for each planet.
+          <br> <br>Your adventure through the Milky Way begins now...<br></p> 
+            
+         
+        </div>
+      </div>
+</div>
+
+<div id="myModal2" class="modal-overlay"  style="display: none; z-index: 2;">
+    <div class="window" >
+        <div class="title-bar">
+          <div class="title-bar-text">FIND ME ON SOCIAL MEDIA</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close" onclick="closeModal('myModal2')"></button>
+          </div>
+        </div>
+        <div class="window-body" >
+     
+       <img src="Assets/images/purpleastro.png" alt="Modal 2 Image" style="margin-top:10px; width: 290px; height: 300px; margin-left: 20%;">
+       <div class="button-container" style="margin-top: 2%;  margin-left: 20%;">
+        <br>
+        <br>
+        <button style="margin-right: 10px;">Instagram</button> 
+        <button style="margin-right: 10px;">Twitter</button>
+        <button>Facebook</button>
+      </div>
+
+
+        </div>
+      </div>
+</div>
+<div id="myModal3" class="modal-overlay"  style="display: none; z-index: 3;">
+    
+        <div class="window" >
+        <div class="title-bar">
+            <div class="title-bar-text">SEND AN EMAIL</div>
+            <div class="title-bar-controls">
+               
+            </div>
+        </div>
+        <div class="window-body" style="display: flex; flex-direction: column; align-items: flex-start;">
+            <div class="field-row-stacked" style="width: 50%; margin-top: 5px;">
+                <label for="text22" style="margin-bottom: 10px;">Email:</label>
+                <input id="text22" type="email" value="your@email.com"/>
+            </div>
+
+            <div class="field-row-stacked" style="width: 50%; font-size: small; margin-top: 15px;">
+                <label for="text23" style="margin-bottom: 10px;">Subject:</label>
+                <input id="text23" type="subject" value="Cosmic Voyage" >
+            </div>
+
+            <label for="message" style=" margin-top: 15px; margin-bottom: 10px;   width: 100%; font-size: small;">Message:</label>
+            <textarea id="message" rows="15" cols="78" style="margin-bottom: 20px;"></textarea>
+ <button aria-label="closeModal" onclick="closeModal('myModal3')">Send</button>
+          
+      
+        </div>
+    </div>
+</div>
+
+<div id="myModal4" class="modal-overlay" style="display: none; z-index: 4;">
+    <div class="window" style=" width:700px; height: 600px;">
+        <div class="title-bar">
+            <div class="title-bar-text">SIMULATOR</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close" onclick="closeModal('myModal4')"></button>
+            </div>
+        </div>
+        <div class="window-body" >
+            <iframe src="https://archive.org/embed/msdos_Microsoft_Space_Simulator_1994" style="border:none; height: 500px; width:600px; margin-left: 35px; margin-top: 15px;" title="Iframe Example"></iframe>
+        </div>
+    </div>
+</div>     
+       </section>
+    
+            <section>
+                <div class="window minimized" id="myWindow1">
+                    <div class="title-bar" onclick="toggleWindow('myWindow1')">
+                        <div class="title-bar-text">THE SUN</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <div class="embossed-panel">
+                            <details>
+                 
+                                <summary>Discovery</summary>
+                                <p style="font-weight: bold;">Discovered By:</p>
+                                <p>Unknown</p>
+                                <p style="font-weight: bold;">Discovered On:</p>
+                                  <p> Unknown</p>
+                             
+                             </details>
+                          <br>
+                          <details>
+                            <summary>Physical Characteristics</summary>
+                         
+                            <p style="font-weight: bold;"> Mass:</p>
+                            <p> 1.989 × 10^30 kg</p>
+        
+                            <p style="font-weight: bold;">Diameter:</p>
+                            <p> 1,392,678 kilometers</p>
+        
+                            <p style="font-weight: bold;">Atmosphere:</p>
+                            <p> Hydrogen and Helium</p>
+        
+                            <p style="font-weight: bold;">Volume:</p>
+                            <p>14,600,000,000 miles3</p>
+        
+                            <p style="font-weight: bold;"> Axial Tilt:</p>
+                            <p >23.5 degrees</p>
+                       </details>
+                      <br>
+                              </div></div>
+                          
+                              
+                          </div></section>
+<section>
+    <div class="window minimized" id="myWindow2">
+        <div class="title-bar" onclick="toggleWindow('myWindow2')">
+            <div class="title-bar-text">MERCURY</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="embossed-panel">
+              
+                <details>
+                 
+                    <summary>Discovery</summary>
+                    <p style="font-weight: bold;">Discovered By:</p>
+                    <p>No one</p>
+                    <p style="font-weight: bold;">Discovered On:</p>
+                      <p> Unknown</p>
+                 
+                 </details>
+              <br>
+              <details>
+                <summary>Physical Characteristics</summary>
+             
+                <p style="font-weight: bold;"> Mass:</p>
+                <p> 5.97217×10^24 kg</p>
+
+                <p style="font-weight: bold;">Density:</p>
+                <p> 5.5134 g/cm3</p>
+
+                <p style="font-weight: bold;">Number of Moons:</p>
+                <p> 
+                 1</p>
+
+                <p style="font-weight: bold;">Volume:</p>
+                <p>
+                    1.083 x 10^12 km3</p>
+
+                <p style="font-weight: bold;"> Axial Tilt:</p>
+                <p > 
+                    23.4392811° degrees</p>
+           </details>
+          <br>
+                  </div></div>
+              
+                  
+              </div></section>
+          
+    
+    
+    <section>
+        <div class="window minimized" id="myWindow3">
+            <div class="title-bar" onclick="toggleWindow('myWindow3')">
+                <div class="title-bar-text">VENUS</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="embossed-panel">
+                <details>
+                    <summary>Discovery</summary>
+                    <p style="font-weight: bold;">Discovered By:</p>
+                    <p>Unknown</p>
+                    <p style="font-weight: bold;">Discovered On:</p>
+                      <p> Unknown</p>
+                 
+                 </details>
+              <br>
+              <details>
+                <summary>Physical Characteristics</summary>
+             
+                <p style="font-weight: bold;"> Mass:</p>
+                <p> 0.815 of Earth‘s</p>
+
+                <p style="font-weight: bold;">Density:</p>
+                <p> Density
+                    5.243 g/cm3</p>
+
+                <p style="font-weight: bold;">Number of Moons:</p>
+                <p> 
+                 0</p>
+
+                <p style="font-weight: bold;">Volume:</p>
+                <p>
+                    0.857 of Earth’s</p>
+
+                <p style="font-weight: bold;"> Axial Tilt:</p>
+                <p > lt
+                    2.64°°</p>
+           </details>
+              <br>
+                      </div></div>
+                  
+                      
+                  </div></section>
+
+<section>
+  <div class="window minimized" id="myWindow4">
+        <div class="title-bar" onclick="toggleWindow('myWindow4')">
+            <div class="title-bar-text">EARTH</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="embossed-panel">
+              
+                <details>
+                 
+                        <summary>Discovery</summary>
+                        <p style="font-weight: bold;">Discovered By:</p>
+                        <p>No one</p>
+                        <p style="font-weight: bold;">Discovered On:</p>
+                          <p> Unknown</p>
+                     
+                     </details>
+                  <br>
+                  <details>
+                    <summary>Physical Characteristics</summary>
+                 
+                    <p style="font-weight: bold;"> Mass:</p>
+                    <p> 5.97217×10^24 kg</p>
+
+                    <p style="font-weight: bold;">Density:</p>
+                    <p> 5.5134 g/cm3</p>
+
+                    <p style="font-weight: bold;">Number of Moons:</p>
+                    <p> 
+                     1</p>
+
+                    <p style="font-weight: bold;">Volume:</p>
+                    <p>
+                        1.083 x 10^12 km3</p>
+
+                    <p style="font-weight: bold;"> Axial Tilt:</p>
+                    <p > 
+                        23.4392811°</p>
+               </details>
+          <br>
+                  </div></div>
+              
+                  
+              </div></section>
+
+        <section>
+            <div class="window minimized" id="myWindow5">
+                  <div class="title-bar" onclick="toggleWindow('myWindow5')">
+                      <div class="title-bar-text">MARS</div>
+                      <div class="title-bar-controls">
+                          <button aria-label="Minimize"></button>
+                  <button aria-label="Maximize"></button>
+                  <button aria-label="Close"></button>
+                      </div>
+                  </div>
+                  <div class="embossed-panel">
+              
+                    <details>
+                     
+                            <summary>Discovery</summary>
+                            <p style="font-weight: bold;">Discovered By:</p>
+                            <p>Unknown</p>
+                            <p style="font-weight: bold;">Discovered On:</p>
+                              <p> Unknown</p>
+                         
+                         </details>
+                      <br>
+                      <details>
+                        <summary>Physical Characteristics</summary>
+                     
+                        <p style="font-weight: bold;"> Mass:</p>
+                        <p> 
+                            0.107 of Earth’s</p>
+ 
+                        <p style="font-weight: bold;">Density:</p>
+                        <p> 
+                            3.9335 g/cm3</p>
+ 
+                        <p style="font-weight: bold;">Number of Moons:</p>
+                        <p> 
+                         2</p>
+ 
+                        <p style="font-weight: bold;">Volume:</p>
+                        <p>
+                            0.151 of Earth‘s </p>
+ 
+                        <p style="font-weight: bold;"> Axial Tilt:</p>
+                        <p > 25.2°</p>
+                   </details>
+              <br>
+                      </div></div>
+                  
+                      
+                  </div></section>
+
+ <section>
+
+    <div class="window" style="width: 320px">
+        <div class="title-bar">
+          <div class="title-bar-text">ASTEROID BELT</div>
+        </div>
+        <div class="window-body">
+      <p>The Asteroid Belt contains between 1.1 and 1.9 million asteroids</p>
+    
+        </div>
+    
+      </div>
+    
+                </section>
+
+<section>
+    <div class="window minimized" id="myWindow6">
+        <div class="title-bar" onclick="toggleWindow('myWindow6')">
+            <div class="title-bar-text">JUPITER</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="embossed-panel">
+              
+                    <details>
+                        <summary>Discovery</summary>
+                        <p style="font-weight: bold;">Discovered By:</p>
+                        <p>Unknown</p>
+                        <p style="font-weight: bold;">Discovered On:</p>
+                          <p> Unknown</p>
+                          
+                     </details>
+                      <br>
+                      <details>
+                        <summary>Physical Characteristics</summary>
+                        <p>  2376.6 km</p>
+                        <p style="font-weight: bold;"> Mass:</p>
+                        <p>
+                            317.8 of Earth's</p>
+        
+                        <p style="font-weight: bold;">Density:</p>
+                        <p> 
+                            1326 kg/m</p>
+        
+                        <p style="font-weight: bold;">Number of Moons:</p>
+                        <p> 95</p>
+        
+                        <p style="font-weight: bold;">Volume:</p>
+                        <p>
+                            1321 of Earth's</p>
+        
+                        <p style="font-weight: bold;"> Axial Tilt:</p>
+                        <p >
+                            3.13°°</p>
+              </details>
+        
+          <br>
+                  </div></div>
+              
+                  
+              </div></section>
+               
+ <section>   
+    <div class="window minimized" id="myWindow7">
+        <div class="title-bar" onclick="toggleWindow('myWindow7')">
+            <div class="title-bar-text">SATURN</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="embossed-panel">
+              
+            <details>
+                <summary>Discovery</summary>
+                <p style="font-weight: bold;">Discovered By:</p>
+                <p>Unknown</p>
+                <p style="font-weight: bold;">Discovered On:</p>
+                  <p> Unknown</p>
+                  
+             </details>
+              <br>
+              <details>
+                <summary>Physical Characteristics</summary>
+                <p>  2376.6 km</p>
+                <p style="font-weight: bold;"> Mass:</p>
+                <p>
+                    95.16 of Earth’s</p>
+
+                <p style="font-weight: bold;">Density:</p>
+                <p> 
+                    0.69 g/cm3</p>
+
+                <p style="font-weight: bold;">Number of Moons:</p>
+                <p> 146</p>
+
+                <p style="font-weight: bold;">Volume:</p>
+                <p>
+                    763 of Earth’s</p>
+
+                <p style="font-weight: bold;"> Axial Tilt:</p>
+                <p >
+                    26.7°</p>
+      </details>
+      <br>
+              </div></div>
+          
+              
+          </div></section>
+
+    <section>
+        <div class="window minimized" id="myWindow8">
+            <div class="title-bar" onclick="toggleWindow('myWindow8')">
+                <div class="title-bar-text">URANUS</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="embossed-panel">
+              
+                    <details>
+                        <summary>Discovery</summary>
+                        <p style="font-weight: bold;">Discovered By:</p>
+                        <p>William Herschel</p>
+                        <p style="font-weight: bold;">Discovered On:</p>
+                          <p> March 13, 1781</p>
+                          <p style="font-weight: bold;"> Discovery Site:</p>
+                                  <p>  Lowell Observatory</p>
+                     </details>
+                     <details>
+                           <summary>Physical Characteristics</summary>
+                           <p>  2376.6 km</p>
+                           <p style="font-weight: bold;"> Mass:</p>
+                           <p>  
+                            
+14.536 of Earth’s</p>
+    
+                           <p style="font-weight: bold;">Density:</p>
+                           <p> 
+                            1.27 g/cm3</p>
+    
+                           <p style="font-weight: bold;">Number of Moons:</p>
+                           <p> 
+                            27</p>
+    
+                           <p style="font-weight: bold;">Volume:</p>
+                           <p>
+                        
+63.086 of Earth’s </p>
+    
+                           <p style="font-weight: bold;"> Axial Tilt:</p>
+                           <p >
+                            
+97.769°</p>
+                      </details>
+                   
+                      </div></div>
+                  
+                      
+                  </div></section>
+ <section>
+    <div class="window minimized" id="myWindow9">
+        <div class="title-bar" onclick="toggleWindow('myWindow9')">
+            <div class="title-bar-text">NEPTUNE</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="embossed-panel">
+         
+                <details>
+                    <summary>Discovery</summary>
+                    <p style="font-weight: bold;">Discovered By:</p>
+                    <p>Johann Galle
+                        Urbain Le Verrier</p>
+                    <p style="font-weight: bold;">Discovered On:</p>
+                      <p> September 23, 1846</p>
+
+   
+                 </details>   <details>
+                       <summary>Physical Characteristics</summary>
+                       <p>  2376.6 km</p>
+                       <p style="font-weight: bold;"> Mass:</p>
+                       <p>  
+                        17.147 of Earth’s</p>
+
+                       <p style="font-weight: bold;">Density:</p>
+                       <p> 
+                        1.638 g/cm3</p>
+
+                       <p style="font-weight: bold;">Number of Moons:</p>
+                       <p> 14</p>
+
+                       <p style="font-weight: bold;">Volume:</p>
+                       <p>
+                        57.74 of Earth‘s
+                        </p>
+
+                       <p style="font-weight: bold;"> Axial Tilt:</p>
+                       <p >
+                        28.32°</p>
+
+                 </details>
+                  </div></div>
+              
+                  
+              </div></section>
+    <section>
+
+        <div class="window minimized" id="myWindow10">
+            <div class="title-bar" onclick="toggleWindow('myWindow10')">
+                <div class="title-bar-text">PLUTO</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="embossed-panel">
+                  
+              
+                        <details>
+                                  <summary>Discovery</summary>
+                                  <p style="font-weight: bold;">Discovered By:</p>
+                                  <p>Clyde Tombaugh</p>
+                                  <p style="font-weight: bold;">Discovered On:</p>
+                                    <p> February 18, 1930</p>
+                                    <p style="font-weight: bold;"> Discovery Site:</p>
+                                            <p>  Lowell Observatory</p>
+                               </details>
+                              <br>
+                               <details>
+                               <summary>Physical Characteristics</summary>
+                               <p style="font-weight: bold;"> Diameter:</p>
+                               <p>  2376.6 km</p>
+                               <p style="font-weight: bold;"> Mass:</p>
+                               <p>  0.0022</p>
+
+                               <p style="font-weight: bold;">Density:</p>
+                               <p>  1.854 g/cm3</p>
+
+                               <p style="font-weight: bold;">Number of Moons:</p>
+                               <p> 5</p>
+
+                               <p style="font-weight: bold;">Volume:</p>
+                               <p>0.0065 of Earth’s</p>
+
+                               <p style="font-weight: bold;"> Axial Tilt:</p>
+                               <p >122.5°</p>
+                       </details>
+                         
+                          </div></div>
+                      
+                          
+                      </div></section>
+
+                   <section>
+                    <p>
+                        Ready to Embark on the Next Voyage?
+                    </p>
+                    <div class="field-row">
+                        <input id="radio5" type="radio" name="first">
+                        <label for="radio5">Yes</label>
+                      </div>
+                      <div class="field-row">
+                        <input id="radio6" type="radio" name="first">
+                        <label for="radio6">No</label>
+                      </div>
+                </section>
+    
+            
+            <div id="toolbar">
+                <div class="toolbar-start-menu">
+                  <button class="start-button">
+                    Start
+                  </button>
+                  
+                  <div class="start-menu-wrapper">
+                    <div class="start-menu-title">
+                      <span><strong>Windows</strong>98</span>
+                    </div>
+                    
+                    <div class="start-menu">
+                      <button class="start-menu-link">
+                        Shut down
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="toolbar-separator"></div>
+                
+                <div class="toolbar-left">
+                  <button class="toolbar-icon ie"></button>
+                  <button class="toolbar-icon outlook"></button>
+                  <button class="toolbar-icon desktop"></button>
+                  <button class="toolbar-icon channels"></button>
+                </div>
+                
+                <div class="toolbar-separator"></div>
+             
+                <div class="toolbar-right">
+                    
+                  <div class="toolbar-icon clock">
+                  </div>
+                </div>
+              </div>
+              
+        <script>
+              function toggleWindow(windowId) {
+                var windowElement = document.getElementById(windowId);
+                windowElement.classList.toggle('minimized');
+            }
+        
+            function openModal(modalId) {
+                document.querySelector('.modal-overlay').style.display = 'flex';
+                document.querySelector('#' + modalId).style.display = 'flex';
+            }
+        
+            function closeModal(modalId) {
+                document.querySelector('.modal-overlay').style.display = 'none';
+                document.querySelector('#' + modalId).style.display = 'none';
+            }
+        </script>
+</body>
+</html>
